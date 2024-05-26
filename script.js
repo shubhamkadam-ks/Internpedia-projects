@@ -1,36 +1,47 @@
+//Temp convertor
 
-let display = document.getElementsByClassName("input")[0];
-let buttons = document.querySelectorAll("button");
-let buttonsArray = Array.from(buttons);
-let string = '';
-buttonsArray.forEach(btn=>{  
+let celsius = document.getElementById("celsius")
+let fahrenheit = document.getElementById("fahrenheit")
+let noUnit = document.getElementById("noUnit")
+let noValue = document.getElementById("noValue")
+let result = document.getElementById("result")
+let button = document.getElementById("convert")
 
-btn.addEventListener("click", (e)=>{
-    if(e.target.innerHTML == 'DEL'){
-        string = string.substring(0, string.length-1);
-        display.value = string;
+function toCelsius(temp){
+    return(temp-32) * (5/9);
+}
+function toFahrenheit(temp) {
+    return(temp * 9/5  + 32);
+}
 
-    }else if(e.target.innerHTML == 'AC'){
-       string = "";
-       display.value = string;
+button.onclick = function(){
+    let val = document.getElementById("value").value;
+    let ans;
 
-    }else if(e.target.innerHTML == '='){
-        try {
-            string = eval(string);
-            display.value = string;
-          }  
-          catch (error) {
-             display.value = "Error";
-             string = "";
-          }
+    noValue.innerHTML = "";
+    noUnit.innerHTML = "";
 
+    if (val==""){
+        noValue.innerHTML = "  *must provide a value"
     }
-    else{
-        string += e.target.innerHTML;
-        display.value = string;
-    }  
-});
-});
+    
+
+    val = Number(val);
+   
+    if (celsius.checked) {
+        ans = toCelsius(val).toLocaleString(undefined, {style: "unit", unit: "celsius", minimumFractionDigits:2 ,maximumFractionDigits: 2})
+    } else if(fahrenheit.checked) {
+        ans = toFahrenheit(val).toLocaleString(undefined, {style: "unit", unit: "fahrenheit", minimumFractionDigits:2 , maximumFractionDigits:2})
+    } else{
+        noUnit.innerHTML = "  *must select a unit for conversion"
+    }
+   
+    if (ans== undefined){
+        result.innerHTML = "";
+    }else{
+    result.innerHTML = ans;
+    }
+}
 
 
 
@@ -39,3 +50,13 @@ btn.addEventListener("click", (e)=>{
 
 
 
+
+
+
+
+
+
+
+
+
+9
