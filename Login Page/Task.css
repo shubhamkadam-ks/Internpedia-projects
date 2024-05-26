@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+.container{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  background-image: url(https://getwallpapers.com/wallpaper/full/5/f/6/395929.jpg);
+ background-size: cover;
+}
+
+
+.container .page{
+    width: 400px;
+    height: 600px;
+   margin-left: 400px;
+   margin-top: 50px;
+    background-color: white;
+ display: flex;
+ flex-direction: column;
+    position: absolute; 
+    justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+}
+   .page h1{
+        font-size: 30px;
+        margin-bottom: 40px;
+        font-weight:bolder;
+    }
+    
+    .page p{
+   
+       margin-right: 120px;
+       padding: 8px;
+       font-size: 15px;
+    }
+
+   .con1 button{
+    border: transparent;
+    background-color: transparent;
+    padding-right: 10px;
+justify-content: space-around;
+
+
+   }
+
+   .con1{
+    border-bottom: solid 1px black;
+   }
+
+  .con1 input{
+   border: none;
+   outline: none;
+    width: 80%;
+    background-color: transparent;
+    justify-content: space-around;
+    padding: 5px;
+}
+    
+.con2{
+    border-bottom: solid 1px black;
+   }
+
+.con2 button{
+    border: transparent;
+    background-color: transparent;
+    padding-right: 10px;
+justify-content: space-around;
+   }
+
+  .con2 input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 80%;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+.con3 h4{
+    width: 100%;
+  margin-left: 150px;
+  font-size: 8px;
+  font-weight: lighter;
+  margin-top: 10px;
+  
+
+}
+ h5{
+    margin-top: 20px;
+    font-size: 10px;
+    margin-left: 15px;
+    font-weight: lighter;
+
+}
+
+.con3 button{
+    margin-left: 17px;
+    margin-top: 25px;
+    width: 90%;
+   /* background-color: #8168E8; */
+   background-image: url(https://getwallpapers.com/wallpaper/full/5/f/6/395929.jpg);
+ background-size: cover;
+   border: 2px solid transparent;
+   border-radius: 20px;
+   color: white;
+   font-size: 15px;
+   padding: 5px;
+
+    
+}
+.con3 button:hover{
+    background-image: url(https://ak9.picdn.net/shutterstock/videos/1021881019/thumb/1.jpg);
+
+}
+    
+.con4 button{
+        margin-top: 20px;
+        font-size: large;
+        padding: 10px;
+        margin-left: 12px;
+        border-radius: 10%;
+        border: 1px solid transparent;
+        cursor: pointer;
+        color: white;
+        
+        
+       
+    }
+    
+    .con4 .facebook{
+        background-color: #0037C1;
+    
+    }
+    .con4 .twitter{
+        background-color: #67BFF5;
+    }
+    .con4 .google{
+        background-color: #E12B2B;
+    }
+    
+   
+   
+    .signup{
+        margin-top: 10px;
+        padding: 10px;
+        margin-left: 10px;
+        background-color:transparent ;
+        border: transparent;
+        font-weight: bold;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
